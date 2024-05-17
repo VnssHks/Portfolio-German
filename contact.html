@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" type="text/css" href="form_style.css">
+
+</head>
+  
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <div class="contact-banner">
+    <h2>Contact Me</h2>
+    <p>I am available for consultations, GIS related projects and design related projects.</p>
+  </div>
+
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mvoeybqq" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="full-name" id="full-name" placeholder="First and Last" required>
+  
+      <label for="email-address">Email Address</label>
+      <input type="email" name="email-address" id="email-address" placeholder="email@domain.com" required>
+  
+      <label for="message">Message</label>
+      <textarea rows="5" name="message" id="message" placeholder="Your message here" required></textarea>
+  
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+  
+
+<div id="footer-placeholder"></div>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+
+<!-- Add Bootstrap CSS CDN link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Add Bootstrap JS CDN links (optional, for dropdowns and other JS-related navbar features) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

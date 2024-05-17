@@ -1,0 +1,199 @@
+.work-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.work-item {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.work-item#section1 .content {
+  color: #000; 
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  margin-top: 5px;
+}
+
+.content p {
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.content .smaller p{
+  font-size: 16pt;
+}
+
+.impressum-container {
+  margin-bottom: 20px;
+}
+
+.impressum-container p {
+  margin: 5px 0; 
+  line-height: 1;
+}
+
+.footer {
+  background-color: #f0f0f0; 
+  color: #000000; 
+  padding: 10px 0; 
+}
+
+.copyright p {
+  margin: 3px 0;
+}
+
+#back-to-top-btn {
+  z-index: 1000;
+  display: none; 
+  justify-content: center; 
+  align-items: center; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 38px; 
+  height: 38px; 
+  padding: 10px;
+  background-color: #afafaf; 
+  color: #fff; 
+  border-radius: 50%; 
+  text-decoration: none;
+}
+
+#back-to-top-btn:hover {
+  background-color: #c6c6c6e3; 
+  color: #fff;
+}
+
+#back-to-top-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 20px;
+}
+
+.work-item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.work-item .content button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.work-item .content .download {
+  position: relative; 
+  top: auto; 
+  transform: none; 
+  background-color: #afafaf; 
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px;
+}
+
+.work-item .content .download:hover {
+  background-color: #c6c6c6e3; 
+}
+#section2 .content {
+  display: grid;
+  place-items: center; /* Center the content both horizontally and vertically */
+  gap: 10px; /* Adjust grid gap as needed */
+}
+
+.gallery {
+  display: flex;
+  justify-content:center;
+}
+
+.gallery-item {
+  width: 50%; /* Adjust width as needed */
+  height: 50%; 
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 10px;
+  display: inline-block;
+}
+
+.gallery-item img{
+  max-width: 300px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1300px) {
+  .gallery {
+    display: block; /* Change to block-level display */
+    margin: 10px auto; /* Center the images */
+  }
+  .gallery-item {
+    margin: 10px 0; /* Adjust top and bottom margin, remove left and right margin */
+  }
+ 
+}
+.back-button {
+  position: fixed;
+  top: 72px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 10px 20px;
+  background-color: #afafaf; /* Example button color */
+  color: #ffffff; /* Example button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #c6c6c6e3; /* Example hover color */
+}
+
+.social-icons a {
+  color: #555; /* Change the color to your desired color */
+  font-size: 24px; /* Change the size of the icons */
+  margin-left: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.social-icons a:hover {
+  color: #37ad68e3; /* Change the color when hovering over the icons */
+}

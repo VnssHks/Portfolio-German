@@ -1,0 +1,113 @@
+.work {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%; 
+  margin-top: 65px;
+}
+
+.work img {
+  display: block;
+  size: 60%; 
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.work .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.824);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .work .description {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+  }
+}
+
+.work:hover img {
+  opacity: 0.7;
+}
+
+.work:hover .description {
+  opacity: 1;
+}
+#back-to-top-btn {
+  display: none; /* Initially hide the button */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 38px; /* Equal width and height for a perfectly round button */
+  height: 38px; /* Equal width and height for a perfectly round button */
+  padding: 10px;
+  background-color: #afafaf; /* Button background color */
+  color: #fff; /* Button text color */
+  border-radius: 50%; /* Make it circular */
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#back-to-top-btn:hover {
+  background-color: #c6c6c6e3; /* Button background color on hover */
+  color: #fff; /* Button text color on hover */
+}
+#back-to-top-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the icon horizontally and vertically */
+  font-size: 20px;
+}
+
+.impressum-container {
+  margin-bottom: 20px; /* Add some space between the impressum and copyright */
+}
+.impressum-container p {
+  margin: 5px 0; /* Adjust the margin to reduce space between lines */
+  line-height: 1;
+}
+
+.footer {
+  background-color: #f0f0f0; /* Change to your desired color */
+  color: #000000; /* Change to your desired text color */
+  padding: 10px 0; /* Add padding to the top and bottom */
+}
+.copyright p {
+  margin: 3px 0; /* Remove default margin */
+}
+
+
+.banner {
+  background-color: rgba(255, 255, 255, 0.7); /* Greyish opaque background */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.banner h2 {
+  margin: 20px;
+  position: relative;
+  z-index: 1;
+}
+.social-icons a {
+  color: #555; /* Change the color to your desired color */
+  font-size: 24px; /* Change the size of the icons */
+  margin-left: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.social-icons a:hover {
+  color: #37ad68e3; /* Change the color when hovering over the icons */
+}
