@@ -1,25 +1,3 @@
-$(document).ready(function() {
-  // Filter functionality
-  $('.filter-buttons button').on('click', function() {
-    var filterValue = $(this).attr('data-filter');
-    console.log("Filter clicked:", filterValue); // Log the filter value
-    
-    // Show all work items if 'All' is clicked
-    if (filterValue === 'all') {
-      $('.work').show();
-    } else {
-      // Hide all work items
-      $('.work').hide();
-      // Show work items matching the filter value
-      $('.work[data-category="' + filterValue + '"]').show();
-    }
-  });
-
-  // Trigger the 'all' filter on page load
-  $('.filter-buttons button[data-filter="all"]').click();
-});
-
-
 // JavaScript to handle clicking on SVGs and redirecting
 $(document).ready(function() {
   $('.work .description').on('click', function() {
@@ -27,4 +5,15 @@ $(document).ready(function() {
     window.location.href = url; // Redirect to the specified URL
   });
 });
-console.log("JavaScript file loaded");
+
+function filterByCategory(category) {
+  console.log('Filtering by category:', category);
+  $('.work').each(function() {
+    if (category === 'all' || $(this).data('category') === category) {
+      $(this).show(); // Show the work item if it belongs to the selected category or if all categories are selected
+    } else {
+      $(this).hide(); // Otherwise, hide the work item
+    }
+  });
+}
+

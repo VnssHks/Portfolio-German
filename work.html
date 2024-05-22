@@ -9,6 +9,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="navbar.js"></script>
+<script src="footer.js"></script>
+<script src="work.js"></script> 
 
 </head>
   
@@ -23,13 +26,29 @@
             <a href="https://github.com/VnssHks" target="_blank"><i class="fab fa-github"></i></a>
           </div>
   </div>
-  <div class="filter-buttons">
-    <button data-filter="all">All</button>
-    <button data-filter="Webmap">Webmap</button>
-    <button data-filter="Print">Print</button>
-    <button data-filter="Article">Article</button>
-    <button data-filter="StoryMap">StoryMap</button>
-  </div>
+  <section class="icon-section">
+    <div class="icon" data-filter="all" onclick="filterByCategory('all')">
+        <img src="images/all.svg" alt="All Icon">
+        <p>All</p>
+    </div>
+    <div class="icon" data-filter="Print" onclick="filterByCategory('Print')">
+        <img src="images/print.svg" alt="Print Icon">
+        <p>Print</p>
+    </div>
+    <div class="icon" data-filter="Webmap" onclick="filterByCategory('Webmap')">
+        <img src="images/webmap.svg" alt="Webmap Icon">
+        <p>Webmap</p>
+    </div>
+    <div class="icon" data-filter="Article" onclick="filterByCategory('Article')">
+        <img src="images/newspaper.svg" alt="Article Icon">
+        <p>Article</p>
+    </div>
+    <div class="icon" data-filter="StoryMap" onclick="filterByCategory('StoryMap')">
+        <img src="images/storymap.svg" alt="StoryMap Icon">
+        <p>StoryMap</p>
+    </div>
+</section>
+
   <div class="container">
   <div class="work" data-category="Webmap">
     <img src="images/Thesis.svg" alt="Project Title">
@@ -102,9 +121,7 @@
           <p>November 2021</p>
         </div></div></div>
   <div id="footer-placeholder"></div>
-  <script src="navbar.js"></script>
-  <script src="footer.js"></script>
-  <script src="work.js"></script> 
+ 
  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
