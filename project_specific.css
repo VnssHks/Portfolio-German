@@ -164,7 +164,7 @@
     margin: 10px auto; /* Center the images */
   }
   .gallery-item {
-    margin: 10px 0; /* Adjust top and bottom margin, remove left and right margin */
+    margin: 10px; /* Adjust top and bottom margin, remove left and right margin */
   }
 }
 
