@@ -27,32 +27,34 @@ window.addEventListener('scroll', function() {
 
 
 
-$(document).ready(function() {
-  $('.gallery-link').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    mainClass: 'mfp-with-zoom mfp-img-mobile',
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true
-    },
-    gallery: {
-      enabled: true
-    },
-    callbacks: {
-      elementParse: function(item) {
-        console.log('Element parsed:', item);
-        // Ensure that the image URL is set correctly
-        item.src = item.el.attr('href');
+  $(document).ready(function() {
+    $('.gallery-link').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      closeBtnInside: false,
+      mainClass: 'mfp-with-zoom mfp-img-mobile',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true
+      },
+      gallery: {
+        enabled: true
+      },
+      callbacks: {
+        elementParse: function(item) {
+          console.log('Element parsed:', item);
+          // Ensure that the image URL is set correctly
+          item.src = item.el.attr('href');
+        }
       }
-    }
+    });
   });
+  
 
 
-});
+
 document.getElementById('downloadButton').addEventListener('click', function() {
   const currentPageUrl = window.location.pathname;
 
@@ -123,5 +125,6 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     console.log('Information not found for the current page');
   }
 });
+
 
 

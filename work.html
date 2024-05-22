@@ -6,6 +6,10 @@
   <title>Work Page</title>
   <link rel="stylesheet" type="text/css" href="projects.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
   
 <body>
@@ -19,7 +23,15 @@
             <a href="https://github.com/VnssHks" target="_blank"><i class="fab fa-github"></i></a>
           </div>
   </div>
-  <div class="work">
+  <div class="filter-buttons">
+    <button data-filter="all">All</button>
+    <button data-filter="Webmap">Webmap</button>
+    <button data-filter="Print">Print</button>
+    <button data-filter="Article">Article</button>
+    <button data-filter="StoryMap">StoryMap</button>
+  </div>
+  <div class="container">
+  <div class="work" data-category="Webmap">
     <img src="images/Thesis.svg" alt="Project Title">
     <div class="description" data-url="Thesis.html">
       <h3>Blazing the Trail - Master Thesis</h3>
@@ -27,7 +39,7 @@
       <p>September 2023</p>
     </div>
   </div>
-  <div class="work">
+  <div class="work" data-category="Print">
     <img src="images/Franzi.svg" alt="Project Title">
     <div class="description" data-url="Berlin_NL.html">
       <h3>Berlin Map</h3>
@@ -35,8 +47,8 @@
       <p>August 2023</p>
     </div>
   </div>
-  </div>
-  <div class="work">
+  
+  <div class="work" data-category="Print">
     <img src="images/WorldMap.svg" alt="Project Title">
     <div class="description" data-url="WorldMap.html">
       <h3>Children's World Map</h3>
@@ -44,7 +56,7 @@
       <p>July 2023</p>
     </div>
   </div>
-  <div class="work">
+  <div class="work" data-category="Print">
     <img src="images/Vienna_e.svg" alt="Project Title">
     <div class="description" data-url="Neighbourhood.html">
       <h3>Neighbourhood Map</h3>
@@ -52,7 +64,7 @@
       <p>March 2023</p>
     </div>
   </div>
-  <div class="work">
+  <div class="work" data-category="Article">
     <img src="images/SoilErosion.svg" alt="Project Title">
     <div class="description" data-url="FAZ2.html">
       <h3>Es zieht uns den Boden unter den Füßen weg</h3>
@@ -60,7 +72,7 @@
       <p>October 2022</p>
     </div>
   </div>
-  <div class="work">
+  <div class="work" data-category="Article">
     <img src="images/Perseids.svg" alt="Project Title">
     <div class="description" data-url="FAZ1.html">
       <h3>"Ich hab' es Feuer regnen sehen."</h3>
@@ -68,37 +80,35 @@
       <p>August 2022</p>
     </div>
   </div>
-  <div class="work">
+  <div class="work" data-category="Print">
     <img src="images/WhatBelongsTogether.svg" alt="Project Title">
     <div class="description" data-url="berlin.html">
       <h3>What belongs together, torn apart</h3>
       <p>Map showcasing 10 extraordinary stories of people who fled the German Democratic Republic between 1961 - 1989</p>
       <p>July 2022</p>
     </div></div>
-    <div class="work">
+    <div class="work" data-category="StoryMap">
       <img src="images/Migration.svg" alt="Project Title">
       <div class="description" data-url="Migration.html">
         <h3>Mapping Origins of Migration</h3>
         <p>ArcGIS StoryMap about the UN SDG 10 as part of a university project - specifically about target 10.7</p>
         <p>June 2022</p>
       </div></div>
-      <div class="work">
+      <div class="work" data-category="StoryMap">
         <img src="images/LOTR.svg" alt="Project Title">
         <div class="description" data-url="LOTR.html">
           <h3>One Map to Track them All</h3>
           <p>ArcGIS StoryMap about character routes and their respective filming locations in New Zealand, of the Lord of the Rings.</p>
           <p>November 2021</p>
-        </div></div>
+        </div></div></div>
   <div id="footer-placeholder"></div>
   <script src="navbar.js"></script>
   <script src="footer.js"></script>
-  <script src="functions.js"></script>
+  <script src="work.js"></script> 
  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

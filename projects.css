@@ -1,19 +1,47 @@
 body{
-  background-color: #000000;
+  background-color: #000000 !important;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap between the items */
+  padding: 16px;
+  box-sizing: border-box;
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
 .work {
+  flex-basis: calc(33.33% - 16px); /* Each work item occupies one-third of the container width */
+  background-color: black; /* Set the background color to black */
   position: relative;
   text-align: center;
-  background-color: black !important; /* Set the background color to black */
+  box-sizing: border-box;
+  padding: 16px;
+  margin: 0;
 }
 
 .work img {
   display: block;
-  width: 60%; /* Ensure the SVG fills the entire container */
-  margin: 0 auto; /* Center the images horizontally */
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  background-color: black; /* Set the background color of the image */
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    justify-content: center; /* Center items when viewport width is less than 992px */
+  }
+
+  .work {
+    flex-basis: calc(50% - 16px); /* Each work item occupies half of the container width */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .work {
+    flex-basis: calc(100% - 16px); /* Each work item occupies full width when viewport width is less than 576px */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
 }
 
 
@@ -37,14 +65,25 @@ body{
 .work .description p {
   font-size: 85%;
 }
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
 
-@media screen and (max-width: 480px) {
-  .work .description h3{
-    font-size: 90%;
-  }
-  .work .description p{
-    font-size: 60%;
-  }}
+.filter-buttons button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+  background-color: #555;
+}
+
  
 
 .work:hover img {
