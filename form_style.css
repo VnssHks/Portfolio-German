@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Example font family */
+  background-image: url('images/Map_Berlin.png'); /* Replace 'your-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: #000;
+}
+#navbar-placeholder {
+  height: 50px; /* Adjust navbar height as needed */
+  background-color: #333; /* Example background color */
+  color: #ffffff;
+}
+
+.contact-info {
+  background-color: #000000;
+  color: #868686;
+  padding: 20px;
+  position: absolute;
+  bottom: 100px; /* Adjust distance from footer as needed */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align items to the right */
+  text-align: right; /* Ensure text is right-aligned */
+}
+
+.contact-info .text {
+  text-align: right;
+}
+
+.contact-me {
+  position: absolute;
+  bottom: 250px; /* Adjust to position above the .contact-info section */
+  right: 5px;
+  background-color: rgba(255, 254, 254, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.contact-info .social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.social-icons a {
+  color: #868686; /* Example color */
+  font-size: 24px;
+}
+.form-container {
+  padding: 20px;
+  border-radius: 10px; /* Example border radius */
+  z-index: 1000;
+  max-width: 400px; /* Adjust maximum width as needed */
+  margin: 20px auto;
+  background-color: #000000; /* Black background color */
+  color: #ffffff; /* White font color */
+  position: absolute;
+  top: 100px; /* Adjust top position as needed */
+  left: 30px; /* Adjust left position as needed */
+}
+.form-container h2 {
+  margin-bottom: 10px;
+}
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff; /* Example border color */
+  border-radius: 5px; /* Example border radius */
+  background-color: #000000; /* White background color for input fields */
+  color: #333; /* Example font color */
+}
+.form-container input[type="submit"] {
+  background-color: #333; /* Example button background color */
+  color: #ffffff; /* Example button text color */
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px; /* Example button border radius */
+}
+.form-container input[type="submit"]:hover {
+  background-color: #555; /* Example button hover background color */
+}
+#footer-placeholder {
+  height: 100px; /* Adjust footer height as needed */
+  background-color: #000000; /* Example background color */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.impressum-container {
+  margin-bottom: 20px; /* Add some space between the impressum and copyright */
+}
+.impressum-container p {
+  margin: 5px 0; /* Adjust the margin to reduce space between lines */
+  line-height: 1;
+}
+
+.footer {
+  background-color: #000000; /* Change to your desired color */
+  color: #868686; /* Change to your desired text color */
+  padding: 10px 0; /* Add padding to the top and bottom */
+}
+.copyright p {
+  margin: 3px 0; /* Remove default margin */
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    position: static;
+    margin: 20px auto;
+    top: auto;
+    left: auto;
+    width: 90%; /* Full width on smaller screens */
+    max-width: 90%; /* Ensure it doesn't exceed screen width */
+  }
+
+  .contact-me {
+    position: static;
+    text-align: center;
+    margin: 20px auto;
+    bottom: auto;
+    right: auto;
+  }
+
+  .contact-info {
+    position: static;
+    margin: 20px auto;
+    align-items: center; /* Center items */
+    text-align: center;
+    width: 100%;
+  }
+  .contact-info .text{
+    position: static;
+    text-align: center;
+  }
+
+  .contact-info .social-icons {
+    justify-content: center; /* Center icons on smaller screens */
+  }
+
+  #footer-placeholder {
+    position: static;
+    margin: 20px 0;
+  }
+}

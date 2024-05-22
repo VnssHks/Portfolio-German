@@ -1,0 +1,188 @@
+
+.banner {
+    background-color: rgba(255, 255, 255, 0.7); /* Greyish opaque background */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .banner h2 {
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .social-icons a {
+    color: #555; /* Change the color to your desired color */
+    font-size: 24px; /* Change the size of the icons */
+    margin-left: 10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .social-icons a:hover {
+    color: #37ad68e3; /* Change the color when hovering over the icons */
+  }
+  
+  #back-to-top-btn {
+    display: none; /* Initially hide the button */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 38px; /* Equal width and height for a perfectly round button */
+    height: 38px; /* Equal width and height for a perfectly round button */
+    padding: 10px;
+    background-color: #afafaf; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 50%; /* Make it circular */
+    text-decoration: none;
+  }
+  
+  #back-to-top-btn:hover {
+    background-color: #c6c6c6e3; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+  }
+  #back-to-top-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the icon horizontally and vertically */
+    font-size: 20px;
+  }
+  
+
+.cv-section {
+    margin-bottom: 30px;
+  }
+  
+  .cv-header {
+    text-align: center;
+  }
+  
+  .cv-entry {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px; /* Set maximum width for the box */
+    margin: 0 auto; /* Center the box horizontally */
+  }
+
+  .cv-date{
+    margin-left: 8px;
+    font-style: italic;
+  }
+  
+  .cv-content {
+    margin-bottom: 20px;
+  }
+  
+  .cv-entry h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+ .cv-header {
+    text-align: center;
+ }
+  
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Make each section take full width */
+  .flex-item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Add margin between sections */
+  .flex-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .experience,
+  .education,
+  .skills {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .flex-item p {
+    margin-bottom: 5px;
+  }
+
+  
+  .skills-box {
+    margin-bottom: 10px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    flex-basis: calc(50% - 10px);
+  }
+  
+  .skill p {
+    margin: 0;
+  }
+  
+  .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .skill-level-wrapper {
+    height: 100%;
+  }
+  
+  .skill-level {
+    height: 100%;
+    width: 100%;
+    background-color: #547cfee3; /* Color of the filled progress bar */
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Adjust the width of the skill level */
+  .skill-level[data-width="80"] {
+    transform: scaleX(0.8);
+  }
+  
+  .skill-level[data-width="70"] {
+    transform: scaleX(0.7);
+  }
+  
+  body {
+    background-image: url('images/svg.svg');
+    background-size: cover; /* Adjust the zoom level here */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .impressum-container {
+    margin-bottom: 20px; /* Add some space between the impressum and copyright */
+  }
+  .impressum-container p {
+    margin: 5px 0; /* Adjust the margin to reduce space between lines */
+    line-height: 1;
+  }
+  
+  .footer {
+    background-color: #f0f0f0; /* Change to your desired color */
+    color: #000000; /* Change to your desired text color */
+    padding: 10px 0; /* Add padding to the top and bottom */
+  }
+  .copyright p {
+    margin: 3px 0; /* Remove default margin */
+  }
+  
