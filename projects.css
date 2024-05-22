@@ -28,9 +28,22 @@
   box-sizing: border-box;
   cursor: pointer;
 }
-@media screen and (max-width: 600px) {
-  .work .description {
-    font-size: 0.8em; /* Adjust font size for smaller screens */
+.work .description h3{
+  font-size: 110%;
+}
+.work .description p{
+  font-size:85%;
+}
+@media screen and (max-width: 480px) {
+  .work .description h3{
+    font-size: 90%;
+  }
+  .work .description p{
+    font-size: 60%;
+  }
+  .work {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 

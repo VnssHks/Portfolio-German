@@ -68,24 +68,7 @@
   #fs-frm textarea:focus {
     border-color: #4CAF50;
   }
-  
-  @media screen and (max-width: 360px) {
-    #fs-frm {
-      max-width: 290px; /* Adjust max-width for screens wider than 768px */
-    }
-  }
-  @media screen and (min-width: 768px) {
-    #fs-frm {
-      max-width: 800px; /* Adjust max-width for screens wider than 768px */
-    }
-  }
-  
-  @media screen and (min-width: 1024px) {
-    #fs-frm {
-      max-width: 1000px; 
-    }
-  }
-  
+
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
@@ -209,107 +192,11 @@
     background-color: #f0f0f0; 
     color: #000000; 
     padding: 10px 0; 
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     text-align: center;
   }
   .copyright p {
     margin: 3px 0; 
   }
-  .availability-calendar {
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  #calendar {
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .calendar-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  #current-month {
-    margin: 0 20px;
-  }
-  
-  .calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1px;
-  }
 
-  #prev-month,
-  #next-month {
-    position: absolute;
-    top: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  #prev-month {
-    left: 10px;
-  }
-  
-  #next-month {
-    right: 10px;
-  }
-  .current-day {
-    background-color: #ffcc00; /* Yellow background */
-    color: #333; /* Dark text color */
-  }
-  
-  .day {
-    /* Your general day styling */
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid #cccccc00;
-    margin: 2px;
-  }
-  
-  .available {
-    /* Style for available days */
-    background-color: #b9e4c9; /* Light green */
-  }
-  
-  .unavailable {
-    /* Style for unavailable days */
-    background-color: #f4cccc; /* Light red */
-  }
-  
-  .current-day {
-    /* Style for the current day */
-    background-color: #ffcc00; /* Yellow */
-  }
-  
-  /* calendar-styles.css */
-/* calendar-styles.css */
-
-/* Container styles */
-.calendar-container {
-    max-width: 400px; /* Adjust as needed */
-    margin: 0 auto;
-  }
-  
-  /* Iframe styles */
-  .calendar-container iframe {
-    width: 100%;
-    height: 500px; /* Adjust as needed */
-    border: none;
-    background-color: #f7f7f7; /* Soft grey background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  }
-  

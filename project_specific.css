@@ -166,12 +166,14 @@
   .gallery-item {
     margin: 10px 0; /* Adjust top and bottom margin, remove left and right margin */
   }
- 
 }
+
 .back-button {
-  position: fixed;
+  position: relative;
   top: 72px; /* Adjust top position as needed */
-  left: 20px; /* Adjust left position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  
   z-index: 1000; /* Ensure it's above other content */
   padding: 10px 20px;
   background-color: #afafaf; /* Example button color */
