@@ -76,6 +76,7 @@ p {
 }
 .form-container h2 {
   margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
 }
 .form-container input,
 .form-container textarea {
@@ -94,9 +95,11 @@ p {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px; 
+   font-family: 'Raleway', sans-serif;
 }
 .form-container input[type="submit"]:hover {
   background-color: #555; 
+   font-family: 'Raleway', sans-serif;
 }
 #footer-placeholder {
   height: 100px; 
@@ -120,6 +123,7 @@ p {
 }
 .copyright p {
   margin: 3px 0;
+   font-family: 'Raleway', sans-serif;
 }
 @media screen and (max-width: 768px) {
   .main-container {
