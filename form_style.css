@@ -1,13 +1,23 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif; 
+  padding: 0; 
   background-image: url('images/Map_Berlin.png'); 
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   position: relative;
-  background-color: #000;
+  background-color: #000; 
+  font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; /* Adjust the font weight as needed */
 }
 #navbar-placeholder {
   height: 50px; 
