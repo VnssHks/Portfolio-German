@@ -217,6 +217,9 @@ p {
   .content{
     padding: 1px;
   }
+  .smaller-container {
+    flex-direction: column;
+  }
 }
 
 .back-button {
