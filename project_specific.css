@@ -1,3 +1,17 @@
+body{
+  background-color: #000000 !important;
+  font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; /* Adjust the font weight as needed */
+}
 .work-container {
   display: flex;
   flex-direction: column;
@@ -8,12 +22,35 @@
 .work-item {
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #919191;
 }
 
-.work-item#section1 .content {
-  color: #000; 
+.work-item#section1 h2 {
+  color: #bcbcbc;
 }
+
+.work-item#section1 h4 {
+  color: #bcbcbc;
+}
+.smaller-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Make sure the work items are flex items and take equal space */
+.smaller-container .work-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #919191;
+}
+
+/* Adjust the content within each work-item */
+.smaller-container .work-item .content {
+  box-sizing: border-box;
+}
+
 
 .content {
   position: relative;
@@ -33,6 +70,7 @@
   margin-top: 10px;
   margin-left: 15%;
   margin-right: 15%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .content .smaller p{
@@ -46,16 +84,18 @@
 .impressum-container p {
   margin: 5px 0; 
   line-height: 1;
+  font-family: 'Raleway', sans-serif;
 }
 
 .footer {
-  background-color: #f0f0f0; 
-  color: #000000; 
+  background-color: #000000; 
+  color: #868686; 
   padding: 10px 0; 
 }
 
 .copyright p {
   margin: 3px 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 #back-to-top-btn {
@@ -69,15 +109,15 @@
   width: 38px; 
   height: 38px; 
   padding: 10px;
-  background-color: #afafaf; 
-  color: #fff; 
+  background-color: #515151; 
+  color: #000000; 
   border-radius: 50%; 
   text-decoration: none;
 }
 
 #back-to-top-btn:hover {
-  background-color: #c6c6c6e3; 
-  color: #fff;
+  background-color: #8f8f8fe3; 
+  color: #000000;
 }
 
 #back-to-top-btn i {
@@ -101,23 +141,24 @@
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #ffffff00;
   border: none;
   font-size: 24px;
   width: 40px;
   height: 150px;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
 }
 
 .work-item .content .download {
   position: relative; 
   top: auto; 
   transform: none; 
-  background-color: #afafaf; 
+  background-color: #515151; 
   height: fit-content;
   width: fit-content;
   border: none;
-  color: white; 
+  color: rgb(0, 0, 0); 
   padding: 15px 32px; 
   text-align: center; 
   text-decoration: none; 
@@ -126,10 +167,11 @@
   margin: 4px 2px; 
   cursor: pointer; 
   border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .work-item .content .download:hover {
-  background-color: #c6c6c6e3; 
+  background-color: #8f8f8fe3; 
 }
 #section2 .content {
   display: grid;
@@ -182,23 +224,24 @@
   top: 72px; /* Adjust top position as needed */
   left: 50%;
   transform: translateX(-50%);
-  
+  margin-bottom: 20px;
   z-index: 1000; /* Ensure it's above other content */
   padding: 10px 20px;
-  background-color: #afafaf; /* Example button color */
-  color: #ffffff; /* Example button text color */
+  background-color: #515151; /* Example button color */
+  color: #000000; /* Example button text color */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .back-button:hover {
-  background-color: #c6c6c6e3; /* Example hover color */
+  background-color: #8f8f8fe3; /* Example hover color */
 }
 
 .social-icons a {
-  color: #555; /* Change the color to your desired color */
+  color: #868686; /* Change the color to your desired color */
   font-size: 24px; /* Change the size of the icons */
   margin-left: 10px;
   position: relative;

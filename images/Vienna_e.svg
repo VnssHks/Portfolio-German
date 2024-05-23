@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with Vectornator (http://vectornator.io/) -->
-<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="61.0186 159.879 118.065 118.066" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="62.0186 160.879 116.065 116.066" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <path d="M62.0186 218.912C62.0186 186.861 88.0006 160.879 120.051 160.879C152.102 160.879 178.084 186.861 178.084 218.912C178.084 250.963 152.102 276.946 120.051 276.946C88.0006 276.946 62.0186 250.963 62.0186 218.912Z" id="Fill"/>
 </defs>
 <clipPath id="ArtboardFrame">
-<rect height="118.066" width="118.065" x="61.0186" y="159.879"/>
+<rect height="116.066" width="116.065" x="62.0186" y="160.879"/>
 </clipPath>
 <g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
 <g opacity="1" vectornator:layerName="Group 1">
-<use fill="#ffffff" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2" vectornator:layerName="Oval 1" xlink:href="#Fill"/>
+<use fill="#ffffff" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="0" stroke-width="2" vectornator:layerName="Oval 1" xlink:href="#Fill"/>
 <clipPath clip-rule="nonzero" id="ClipPath">
 <use xlink:href="#Fill"/>
 </clipPath>

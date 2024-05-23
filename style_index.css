@@ -1,19 +1,26 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000000;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     margin: 0;
-}
-
+  }
+  
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; /* Adjust the font weight as needed */
+  }
+  
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('images/Ubahn.jpg') no-repeat center center/cover;
+    background: url('images/Map_Berlin.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -124,6 +131,8 @@ h2, h3, h4 {
   .impressum-container p {
     margin: 5px 0; /* Adjust the margin to reduce space between lines */
     line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; /* Adjust the font weight as needed */
   }
   
   .footer {
@@ -133,5 +142,7 @@ h2, h3, h4 {
   }
   .copyright p {
     margin: 3px 0; /* Remove default margin */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; /* Adjust the font weight as needed */
   }
   

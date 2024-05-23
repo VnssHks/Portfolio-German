@@ -111,8 +111,12 @@ body {
 .copyright p {
   margin: 3px 0; /* Remove default margin */
 }
-
 @media screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of children */
+  }
+
   .form-container {
     position: static;
     margin: 20px auto;
@@ -137,7 +141,7 @@ body {
     text-align: center;
     width: 100%;
   }
-  .contact-info .text{
+  .contact-info .text {
     position: static;
     text-align: center;
   }

@@ -33,11 +33,21 @@
     <style>
       .dropdown:hover .dropdown-menu {
         display: block;
+        background-color: #000;
+       
       }
       .stay-open {
       display: block !important;
     }
+    .dropdown-menu .dropdown-item {
+        color: #d3d3d3 !important;
+        font-family: 'Raleway', sans-serif;
+      }
 
+      .dropdown-menu .dropdown-item:hover {
+        color: #ffffff !important; /* Brighter text on hover */
+        background-color: #333 !important; /* Darker background on hover */
+      }
     .dropdown:hover .dropdown-menu.stay-open {
       display: block !important;
     }
@@ -57,17 +67,19 @@
 
 .navbar-nav .nav-link {
     color: #000;
+    font-family: 'Raleway', sans-serif;
 }
 .navbar.navbar-light {
-    background-color: #000 !important; /* Black background */
+    background-color: #000 !important; 
+    font-family: 'Raleway', sans-serif;
   }
 
   .navbar .navbar-brand {
-    color: #fff !important; /* White text */
+    color: #d3d3d3 !important; 
   }
 
   .navbar .navbar-nav .nav-link {
-    color: #fff !important; /* White text */
+    color: #d3d3d3 !important; /* White text */
   }
   .navbar-toggler {
       border-color: rgba(255, 255, 255, 0.1) !important;
@@ -88,6 +100,9 @@
           }
         });
       </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </div>
 </nav>
 
