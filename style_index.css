@@ -106,16 +106,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 38px; /* Equal width and height for a perfectly round button */
     height: 38px; /* Equal width and height for a perfectly round button */
     padding: 10px;
-    background-color: #afafaf; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #515151; 
+    color: #000000; /* Button text color */
     border-radius: 50%; /* Make it circular */
     text-decoration: none;
     z-index: 1000;
   }
   
   #back-to-top-btn:hover {
-    background-color: #c6c6c6e3; /* Button background color on hover */
-    color: #fff; /* Button text color on hover */
+    background-color: #8f8f8fe3; 
+    color: #000000;
   }
   #back-to-top-btn i {
     position: absolute;
@@ -145,4 +145,27 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400; /* Adjust the font weight as needed */
   }
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+      .content-section {
+          flex-direction: column;
+      }
   
+      .content-image,
+      .content-text {
+          flex: unset; /* Reset the flex value */
+          width: 100%; /* Make them take full width */
+      }
+  
+      .content-section .content-image {
+          order: 1; /* Ensure images come first */
+      }
+  
+      .content-section .content-text {
+          order: 2; /* Ensure text comes second */
+      }
+  
+      .content-image img {
+          margin-bottom: 20px; /* Add some space between the image and text */
+      }
+  }
