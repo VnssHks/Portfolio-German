@@ -10,10 +10,11 @@
       </li>
       <li class="nav-item">
         <div class="dropdown" data-delay="1500">
-          <a class="nav-link dropdown-toggle" href="work.html" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="window.location.href = 'work.html';">
+          <a class="nav-link dropdown-toggle" href="work.html" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
             Projekte
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="work.html">Alle Projekte</a>
             <a class="dropdown-item" href="Thesis.html">Blazing the Trail - Master Arbeit</a>
             <a class="dropdown-item" href="Berlin_NL.html">Nachbarschaftkarte Berlin</a>
             <a class="dropdown-item" href="WorldMap.html">Weltkarte für Kinder</a>
@@ -34,7 +35,7 @@
       .dropdown:hover .dropdown-menu {
         display: block;
         background-color: #000;
-        margin-top: 0;
+       margin-top: 0;
       }
       .stay-open {
       display: block !important;
@@ -51,10 +52,8 @@
     .dropdown:hover .dropdown-menu.stay-open {
       display: block !important;
     }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
 
-    .navbar .nav-item:hover .dropdown-menu{ 
-      display: block; 
-    }
 
 .navbar-brand {
     margin-right: auto; /* Pushes the brand to the left */
@@ -91,8 +90,6 @@
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 255, 255, 255, 1.0 %29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
     }
-
-
 
       </style>
       <script>
